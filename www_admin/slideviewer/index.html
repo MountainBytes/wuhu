@@ -22,9 +22,23 @@
     <![endif]-->
     <script type="text/javascript">
     <!--
+    
+    var WuhuSlideSystemWithVideo = Class.create(WuhuSlideSystem,{
+      insertSlide:function( $super, options )
+      {
+        var section = $super(options);
+        var video = new Element("video",{ autoplay: "autoplay", muted: "muted" , loop: "loop", src: "loop3_slides_yuv420.mp4" });
+        //video.play();
+        section.insertBefore( video, section.down(".container") );
+        return section;
+      }
+    });
+
+    
+
     document.observe("dom:loaded",function(){
       var hash = location.search.toQueryParams();
-      var ws = new WuhuSlideSystem({
+      var ws = new WuhuSlideSystemWithVideo({
         width: hash.width || 1920,
         height: hash.height || 1080,
         prizegivingStyle: hash.prizegivingStyle || 'bars',

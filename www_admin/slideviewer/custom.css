@@ -1,0 +1,134 @@
+/** you can use this to hide the mouse cursor entirely */
+/*body { cursor: none; }*/
+
+/* put your own styling HERE */
+
+@font-face {
+    font-family: "GoblinOne";
+    src: url("./GoblinOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "MetalMania";
+    src: url("./MetalMania-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Changa";
+    src: url("./Changa-Regular.ttf");
+}
+
+body {
+	cursor: none;
+	font-family: "GoblinOne";
+}
+
+.reveal .slides > section.rotationSlide.text,
+.reveal .slides > section.announcementSlide,
+.reveal .slides > section.countdownSlide,
+.reveal .slides > section.compoDisplaySlide,
+.reveal .slides > section.prizegivingSlide,
+.dummy
+{
+  font-family: "Changa";
+  text-shadow: 5px 5px 5px #000;
+}
+
+.reveal .slides > section.compoDisplaySlide.intro .now,
+.reveal .slides > section.compoDisplaySlide.outro .over,
+.dummy {
+	font-family: "GoblinOne";
+	text-transform: uppercase;
+}
+
+.reveal .slides > section.compoDisplaySlide.entry .number,
+.dummy {
+	height: 800px;
+	font-family: "GoblinOne";
+	font-size: 192px;
+	padding-left: 20px;
+}
+
+.reveal .slides > section.compoDisplaySlide.entry .title,
+.dummy {
+	font-size: 120%;
+	font-family: "GoblinOne";
+	text-transform: uppercase;
+	padding-right: 2em;
+
+}
+
+
+.reveal .slides > section.compoDisplaySlide.entry .eventName,
+.reveal .slides > section.prizegivingSlide.entry .eventName,
+.dummy {
+	top: 10px !important;
+	font-family: "GoblinOne";
+	text-transform: uppercase;
+	font-size: 60%;
+}
+
+.reveal .slides > section.compoDisplaySlide.entry .author,
+.dummy {
+}
+
+.reveal .slides > section.compoDisplaySlide.entry .comment,
+.dummy {
+	font-family: "Changa";
+	text-shadow: 2px 2px 2px #000;
+	padding-top: 2ex;
+	padding-right: 2em;
+}
+
+.reveal .slides > section.compoDisplaySlide.entry .features,
+.dummy {
+	position: absolute;
+	top: 700px;
+	left: 150px;
+	text-align: left;
+}
+
+.reveal .slides > section.prizegivingSlide.intro .eventName,
+.dummy {
+	font-family: "GoblinOne";
+	text-transform: uppercase;
+}
+
+.reveal .slides > section.prizegivingSlide.intro .eventName,
+.dummy {
+	font-family: "GoblinOne";
+	text-transform: uppercase;
+}
+
+.reveal .slides > section.prizegivingSlide.prizinator .title,
+.reveal .slides > section.prizegivingSlide.prizinator .ranking,
+.dummy {
+	font-family: "GoblinOne";
+	text-transform: uppercase;
+	font-size: 85%;
+}
+
+.reveal .slides > section.prizegivingSlide .author::before,
+.dummy {
+	content: " by ";
+}
+
+.reveal .slides > section.prizegivingSlide .points::before,
+.dummy {
+	content: " – ";
+}
+
+.reveal .slides > section.prizegivingSlide.prizinator > .container,
+.dummy {
+	top: 100px;
+}
+
+/*
+video#slidevideo {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+}
+*/
+
+
