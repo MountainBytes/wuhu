@@ -83,6 +83,7 @@ if (@$_POST["mode"])
         {
           $a["author"] = $t->author;
         }
+        run_hook("admin_beamer_compodisplay_postprocess_entry",array("slide"=>&$a,"entry"=>$t,"compo"=>$compo));
         $out["result"]["entries"][] = $a;
       }
     } break;

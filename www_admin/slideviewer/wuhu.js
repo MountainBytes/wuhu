@@ -292,12 +292,12 @@ var WuhuSlideSystem = Class.create({
                 var sec = this.insertSlide({"class":"compoDisplaySlide entry"});
                 sec.insert( new Element("div",{"class":"eventName"}).update(compoName) );
                 var cont = sec.down("div.container");
-                var fields = ["number","title","author","comment"];
+                var fields = ["number","title","author","comment","extrainfo"];
                 fields.each(function(field){
                   if ( entry[field] )
                   {
                     var s = (entry[field] + "").escapeHTML();
-                    if (field == "comment")
+                    if (field == "comment" || field == "extrainfo")
                       s = s.replace(/(?:\r\n|\r|\n)/g, '<br />');
                     cont.insert( new Element("div",{"class":field}).update( s ) );
                   }

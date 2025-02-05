@@ -80,7 +80,7 @@ body {
 	padding-right: 2em;
 }
 
-.reveal .slides > section.compoDisplaySlide.entry .features,
+.reveal .slides > section.compoDisplaySlide.entry .extrainfo,
 .dummy {
 	position: absolute;
 	top: 700px;
