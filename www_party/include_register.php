@@ -121,6 +121,7 @@ run_hook("register_endform");
   <input type="submit" value="Go!" />
 </div>
 </form>
+<p><small>Please find our privacy policy <a href="https://mountainbytes.ch/privacypolicy" target="_blank">here</a>.</small></p>
 <?php
 }
 
