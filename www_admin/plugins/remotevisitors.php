@@ -11,7 +11,17 @@ function remotevisitors_processfield( $data )
 }
 add_hook("register_processdata","remotevisitors_processfield");
 
-function remotevisitors_users_addfield( &$data )
+
+function remotevisitors_edituser_add_field( $data )
+{
+  if ( @$data["user"] )
+  {
+    printf("  <li><b>Remote:</b> %s</li>\n",$data["user"]->remote ? "YES" : "no");
+  }
+}
+add_hook("admin_edituser_user_fields_end","remotevisitors_edituser_add_field");
+
+function remotevisitors_edituser_afterfields( &$data )
 {
   if (!$data["user"])
   {
@@ -27,7 +37,7 @@ function remotevisitors_users_addfield( &$data )
 </form>
 <?php
 }
-add_hook("admin_edituser_beforeactions","remotevisitors_users_addfield");
+add_hook("admin_edituser_beforeactions","remotevisitors_edituser_afterfields");
 
 function remotevisitors_process_data()
 {
@@ -41,8 +51,6 @@ function remotevisitors_process_data()
 }
 add_hook("admin_edituser_start","remotevisitors_process_data");
 
-
-
 function remotevisitors_userlist_add_column($data)
 {
   $text = "";
@@ -51,7 +59,6 @@ function remotevisitors_userlist_add_column($data)
   printf("  <td>%s</td>", $text);
 }
 add_hook("admin_users_userlist_row_end","remotevisitors_userlist_add_column");
-
 
 function remotevisitors_profile_addfield( )
 {
