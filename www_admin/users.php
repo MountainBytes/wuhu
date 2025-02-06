@@ -33,6 +33,7 @@ if (@$_GET["id"])
   printf("  <li><b>Registration time:</b> %s</li>\n",$user->regtime);
   if ($votekey)
     printf("  <li><b>Associated votekey:</b> %s</li>\n",$votekey->votekey);
+  run_hook("admin_edituser_user_fields_end",array("user"=>$user));
   printf("</ul>");
 
 echo "<hr/>\n";
