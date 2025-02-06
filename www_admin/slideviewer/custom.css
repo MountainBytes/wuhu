@@ -128,3 +128,15 @@ video#slidevideo {
 	width: 100vw;
 	height: 100vh;
 }
+
+table.timetable {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th.timetabletime, td.timetabletime {
+	padding-bottom: 0.5ex;
+}
+th.timetableevent, td.timetableevent {
+	padding-left: 0.5em;
+}
