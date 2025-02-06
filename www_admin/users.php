@@ -113,6 +113,7 @@ run_hook("admin_edituser_beforeactions",array("user"=>$user));
     printf("  <td>%s</td>",_html($t->regtime));
     printf("  <td>%d votes</td>",_html($t->votes));
     printf("  <td>%d entries</td>",_html($t->entries));
+    run_hook("admin_users_userlist_row_end",array("user"=>&$t));
     printf("</tr>");
   }
   printf("</table>");
