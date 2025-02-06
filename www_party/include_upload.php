@@ -67,7 +67,7 @@ foreach($s as $t)
   <input id='author' name="author" type="text" value="<?=_html(@$_POST["author"])?>"/>
 </div>
 <div class='formrow'>
-  <label for="comment">Comment: <small>(this will be shown on the compo slide)</small></label>
+  <label for="comment">Comment: <small>(Please state the tools you have used. This will be shown on the compo slide)</small></label>
   <textarea name="comment"><?=_html(@$_POST["comment"])?></textarea>
 </div>
 <div class='formrow'>

@@ -99,7 +99,7 @@ if (@$_GET["id"])
   <input id="author" name="author" type="text" value="<?=_html($entry->author)?>"/>
 </div>
 <div class='formrow'>
-  <label for="comment">Comment: (this will be shown on the compo slide)</label>
+  <label for="comment">Comment: (Please state the tools you have used. This will be shown on the compo slide)</label>
   <textarea id="comment" name="comment"><?=_html($entry->comment)?></textarea>
 </div>
 <div class='formrow'>
