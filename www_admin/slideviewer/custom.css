@@ -4,6 +4,17 @@
 /* put your own styling HERE */
 
 @font-face {
+    font-family: "Shrikhand";
+    src: url("./Shrikhand-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url("./Lexend-Regular.ttf");
+}
+
+
+@font-face {
     font-family: "GoblinOne";
     src: url("./GoblinOne-Regular.ttf");
 }
@@ -20,7 +31,7 @@
 
 body {
 	cursor: none;
-	font-family: "GoblinOne";
+	font-family: "Shrikhand";
 }
 
 .reveal .slides > section.rotationSlide.text,
@@ -30,21 +41,21 @@ body {
 .reveal .slides > section.prizegivingSlide,
 .dummy
 {
-  font-family: "Changa";
+  font-family: "Lexend";
   text-shadow: 5px 5px 5px #000;
 }
 
 .reveal .slides > section.compoDisplaySlide.intro .now,
 .reveal .slides > section.compoDisplaySlide.outro .over,
 .dummy {
-	font-family: "GoblinOne";
+	font-family: "Shrikhand";
 	text-transform: uppercase;
 }
 
 .reveal .slides > section.compoDisplaySlide.entry .number,
 .dummy {
 	height: 800px;
-	font-family: "GoblinOne";
+	font-family: "Shrikhand";
 	font-size: 192px;
 	padding-left: 20px;
 }
@@ -52,7 +63,7 @@ body {
 .reveal .slides > section.compoDisplaySlide.entry .title,
 .dummy {
 	font-size: 120%;
-	font-family: "GoblinOne";
+	font-family: "Shrikhand";
 	text-transform: uppercase;
 	padding-right: 2em;
 
@@ -63,7 +74,7 @@ body {
 .reveal .slides > section.prizegivingSlide.entry .eventName,
 .dummy {
 	top: 10px !important;
-	font-family: "GoblinOne";
+	font-family: "Shrikhand";
 	text-transform: uppercase;
 	font-size: 60%;
 }
@@ -74,7 +85,7 @@ body {
 
 .reveal .slides > section.compoDisplaySlide.entry .comment,
 .dummy {
-	font-family: "Changa";
+	font-family: "Lexend";
 	text-shadow: 2px 2px 2px #000;
 	padding-top: 2ex;
 	padding-right: 2em;
@@ -90,20 +101,20 @@ body {
 
 .reveal .slides > section.prizegivingSlide.intro .eventName,
 .dummy {
-	font-family: "GoblinOne";
+	font-family: "Shrikhand";
 	text-transform: uppercase;
 }
 
 .reveal .slides > section.prizegivingSlide.intro .eventName,
 .dummy {
-	font-family: "GoblinOne";
+	font-family: "Shrikhand";
 	text-transform: uppercase;
 }
 
 .reveal .slides > section.prizegivingSlide.prizinator .title,
 .reveal .slides > section.prizegivingSlide.prizinator .ranking,
 .dummy {
-	font-family: "GoblinOne";
+	font-family: "Shrikhand";
 	text-transform: uppercase;
 	font-size: 85%;
 }
