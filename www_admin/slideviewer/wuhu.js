@@ -270,13 +270,17 @@ var WuhuSlideSystem = Class.create({
               var compoNameFull = "";
               if (result.componame)
               {
-                compoName = result.componame.escapeHTML();
-                compoNameFull = "The " + compoName.escapeHTML() + " compo";
+                // compoName = result.componame.escapeHTML();
+                // compoNameFull = "The " + compoName.escapeHTML() + " compo";
+                compoName = result.componame;
+                compoNameFull = "The " + compoName + " compo";
               }
               if (result.eventname)
               {
-                compoName = result.eventname.escapeHTML();
-                compoNameFull = compoName.escapeHTML();
+                // compoName = result.eventname.escapeHTML();
+                // compoNameFull = compoName.escapeHTML();
+                compoName = result.eventname;
+                compoNameFull = compoName;
               }
 
               // slide 1: introduction
