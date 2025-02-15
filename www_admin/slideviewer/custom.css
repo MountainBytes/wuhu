@@ -13,25 +13,11 @@
     src: url("./Lexend-Regular.ttf");
 }
 
-
-@font-face {
-    font-family: "GoblinOne";
-    src: url("./GoblinOne-Regular.ttf");
-}
-
-@font-face {
-    font-family: "MetalMania";
-    src: url("./MetalMania-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Changa";
-    src: url("./Changa-Regular.ttf");
-}
-
 body {
 	cursor: none;
+/*
 	font-family: "Shrikhand";
+*/
 }
 
 .reveal .slides > section.rotationSlide.text,
@@ -43,6 +29,17 @@ body {
 {
   font-family: "Lexend";
   text-shadow: 5px 5px 5px #000;
+}
+
+.reveal .slides > h1,
+.reveal .slides > h2,
+.reveal .slides h3,
+.reveal .slides > h4,
+.reveal .slides > h5,
+.reveal .slides h6,
+.dummy {
+	font-family: "Shrikhand";
+	text-transform: uppercase;
 }
 
 .reveal .slides > section.compoDisplaySlide.intro .now,
@@ -68,7 +65,6 @@ body {
 	padding-right: 2em;
 
 }
-
 
 .reveal .slides > section.compoDisplaySlide.entry .eventName,
 .reveal .slides > section.prizegivingSlide.entry .eventName,
@@ -99,13 +95,13 @@ body {
 	text-align: left;
 }
 
-.reveal .slides > section.prizegivingSlide.intro .eventName,
+.reveal .slides > section.prizegivingSlide.intro .header,
 .dummy {
 	font-family: "Shrikhand";
 	text-transform: uppercase;
 }
 
-.reveal .slides > section.prizegivingSlide.intro .eventName,
+.reveal .slides > section.prizegivingSlide.prizinator .eventName,
 .dummy {
 	font-family: "Shrikhand";
 	text-transform: uppercase;
